@@ -12,3 +12,5 @@ The technical stuff...
 * PHP7 compatible
 * Fully internationalized, ready for translations. **If you would like to add a translation to this plugin then please head to the [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/no-self-ping "Translating WordPress") page**
 * WCAG 2.0 Compliant at AA level
+
+Once activated, there's nothing for you to do. However, head to Settings -> Discussion and you'll find a field in which you can, if you wish, specify more domains that won't be pinged. Why? Well, maybe you often refer to other sites that you maintain or, particularly, you run a multi-site and don't want each blog pinging the other - specify a list here and you're sorted.
