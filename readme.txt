@@ -2,9 +2,9 @@
 Contributors: mdawaffe, dartiss
 Tags: pingback, ping, trackback
 Requires at least: 4.6
-Tested up to: 4.9.2
+Tested up to: 4.9.3
 Requires PHP: 5.3
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,8 @@ The technical stuff...
 * Fully internationalized, ready for translations. **If you would like to add a translation to this plugin then please head to the [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/no-self-ping "Translating WordPress") page**
 * WCAG 2.0 Compliant at AA level
 
+Once activated, there's nothing for you to do. However, head to Settings -> Discussion and you'll find a field in which you can, if you wish, specify more domains that won't be pinged. Why? Well, maybe you often refer to other sites that you maintain or, particularly, you run a multi-site and don't want each blog pinging the other - specify a list here and you're sorted.
+
 Please visit the [Github page](https://github.com/dartiss/no-self-pings "Github") for the latest code development, planned enhancements and known issues.
 
 == Installation ==
@@ -36,9 +38,16 @@ No Self Pings can be found and installed via the Plugin menu within WordPress ad
 
 It's now ready to go.
 
+== Screenshots ==
+
+1. Option to specify additional URLs, as found in Settings -> Discussion.
+
 == Changelog ==
 
 [Learn more about my version numbering methodology](https://artiss.blog/2016/09/wordpress-plugin-versioning/ "WordPress Plugin Versioning") 
+
+= 1.1 =
+* Enhancement: A second update in the same month? It's like all our Christmas' come at once. Well, I've now added an (optional) field to the Discussion settings so that you can specify even more domains that should't be pinged. You're welcome.
 
 = 1.0 =
 * Enhancement: Now using `home_url()` instead of `get_option( 'home' )`, as it's more SSL friendly
@@ -52,5 +61,5 @@ It's now ready to go.
 
 == Upgrade Notice ==
 
-= 1.0 =
-* Initial release
+= 1.1 =
+* Option added to specify additional domain to not be pinged
