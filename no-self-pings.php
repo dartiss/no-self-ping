@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: No Self Pings
-Plugin URI: https://github.com/dartiss/no-self-pings
+Plugin URI: https://github.com/dartiss/no-self-ping
 Description: Keeps WordPress from sending pings to your own site.
-Version: 1.1
+Version: 1.1.1
 Author: Michael D. Adams
 Author URI: http://blogwaffe.com/
 Text Domain: no-self-ping
@@ -34,7 +34,7 @@ function no_self_ping_plugin_meta( $links, $file ) {
 
 	if ( false !== strpos( $file, 'no-self-pings.php' ) ) {
 
-		$links = array_merge( $links, array( '<a href="https://github.com/dartiss/no-self-pings">' . __( 'Github', 'no-self-ping' ) . '</a>' ) );
+		$links = array_merge( $links, array( '<a href="https://github.com/dartiss/no-self-ping">' . __( 'Github', 'no-self-ping' ) . '</a>' ) );
 
 		$links = array_merge( $links, array( '<a href="https://wordpress.org/support/plugin/no-self-ping">' . __( 'Support', 'no-self-ping' ) . '</a>' ) );
 	}
@@ -75,10 +75,10 @@ function no_self_ping( &$links ) {
 			unset( $links[ $l ] );
 		}
 
-		foreach ( $url_array as $u => $url ) {
+		foreach ( $url_array as $url ) {
 
 			$url = trim( $url );
-			if ( 0 === strpos( $link, $url ) && $url != '' ) {
+			if ( 0 === strpos( $link, $url ) && $url !== '' ) {
 				unset( $links[ $l ] );
 			}			
 		}
@@ -116,7 +116,7 @@ add_action( 'admin_init', 'no_self_pings_settings_init' );
 
 function no_self_pings_section_callback() {
 
-	_e( sprintf ( 'By default, No Self Pings will exclude pings for this site (%s) but you can supply additional URLs below. Separate multiple URLs with line breaks.', esc_url ( home_url() ) ), 'no-self-ping' );
+	esc_attr_e( sprintf ( 'By default, No Self Pings will exclude pings for this site (%s) but you can supply additional URLs below. Separate multiple URLs with line breaks.', esc_url ( home_url() ) ), 'no-self-ping' );
 
 }
 
@@ -132,6 +132,6 @@ function no_self_pings_setting_callback() {
 
 	$urls = sanitize_option( 'ping_sites', get_option( 'no_self_pings_option', '' ) );
 	
-	echo '<textarea name="no_self_pings_option" rows="3" class="large-text code">' . $urls . '</textarea>';
+	echo '<textarea name="no_self_pings_option" rows="3" class="large-text code">' . esc_attr( $urls ) . '</textarea>';
 
 }
