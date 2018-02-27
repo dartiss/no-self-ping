@@ -17,4 +17,3 @@ if ( !defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 // Remove options
 
 delete_option( 'no_self_pings_option');
-?>
