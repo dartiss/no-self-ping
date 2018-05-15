@@ -4,7 +4,7 @@ Tags: pingback, ping, trackback
 Requires at least: 4.6
 Tested up to: 4.9.4
 Requires PHP: 5.3
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,7 @@ The technical stuff...
 * PHP7 compatible
 * Passes [WordPress.com VIP](https://vip.wordpress.com) coding standards and fully compatible with their platform
 * Fully internationalized, ready for translations. **If you would like to add a translation to this plugin then please head to the [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/no-self-ping "Translating WordPress") page**
+* WCAG 2.0 Compliant at AA level
 * Gutenberg ready
 
 Once activated, there's nothing for you to do. However, head to Settings -> Discussion and you'll find a field in which you can, if you wish, specify more domains that won't be pinged. Why? Well, maybe you often refer to other sites that you maintain or, particularly, you run a multi-site and don't want each blog pinging the other - specify a list here and you're sorted.
@@ -47,6 +48,10 @@ It's now ready to go.
 
 [Learn more about my version numbering methodology](https://artiss.blog/2016/09/wordpress-plugin-versioning/ "WordPress Plugin Versioning")
 
+= 1.1.2 =
+* Enhancement: Because minimum VIP standards are just not enough, it now follows their hard-as-snails, full-strength standards. Because your code is worth it
+* Enhancement: Improved accessibility where we've added the new field to the admin settings, so it's now WCAG 2.0 compliant
+
 = 1.1.1 =
 * Enhancement: Code quality enhancements to bring it in line with WordPress.com VIP coding standards
 
@@ -66,5 +71,5 @@ It's now ready to go.
 
 == Upgrade Notice ==
 
-= 1.1.1 =
-* Now fully compatible with the WordPress.com VIP platform
+= 1.1.2 =
+* Code quality and accessibility improvements
