@@ -2,7 +2,7 @@
 Contributors: mdawaffe, dartiss
 Tags: pingback, ping, trackback
 Requires at least: 4.6
-Tested up to: 4.9.4
+Tested up to: 5.2.2
 Requires PHP: 5.3
 Stable tag: 1.1.2
 License: GPLv2 or later
@@ -30,6 +30,8 @@ The technical stuff...
 Once activated, there's nothing for you to do. However, head to Settings -> Discussion and you'll find a field in which you can, if you wish, specify more domains that won't be pinged. Why? Well, maybe you often refer to other sites that you maintain or, particularly, you run a multi-site and don't want each blog pinging the other - specify a list here and you're sorted.
 
 Please visit the [Github page](https://github.com/dartiss/no-self-ping "Github") for the latest code development, planned enhancements and known issues.
+
+Icons made by [Freepik](https://www.flaticon.com/authors/freepik "Freepik") from [www.flaticon.co](https://www.flaticon.com/ "Flaticon") is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0 "Creative Commons BY 3.0").
 
 == Installation ==
 
