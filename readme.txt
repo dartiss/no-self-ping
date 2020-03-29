@@ -1,14 +1,15 @@
 === No Self Pings ===
 Contributors: mdawaffe, dartiss
+Donate link: https://artiss.blog/donate
 Tags: pingback, ping, trackback
 Requires at least: 4.6
-Tested up to: 5.3
+Tested up to: 5.4
 Requires PHP: 5.3
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Keeps WordPress from sending pings to your own site.
+🏓 Keeps WordPress from sending pings to your own site.
 
 == Description ==
 
@@ -18,18 +19,11 @@ Some people do not like this behavior; it clutters up their comments.
 
 This plugin disables intra-blog pinging.
 
-The technical stuff...
-
-* Designed for both single and multi-site installations
-* PHP7 compatible
-* Passes [WordPress.com VIP](https://vip.wordpress.com) coding standards and fully compatible with their platform
-* Fully internationalized, ready for translations. **If you would like to add a translation to this plugin then please head to the [Translating WordPress](https://translate.wordpress.org/projects/wp-plugins/no-self-ping "Translating WordPress") page**
-* WCAG 2.0 Compliant at AA level
-* Gutenberg ready
-
 Once activated, there's nothing for you to do. However, head to Settings -> Discussion and you'll find a field in which you can, if you wish, specify more domains that won't be pinged. Why? Well, maybe you often refer to other sites that you maintain or, particularly, you run a multi-site and don't want each blog pinging the other - specify a list here and you're sorted.
 
 Please visit the [Github page](https://github.com/dartiss/no-self-ping "Github") for the latest code development, planned enhancements and known issues.
+
+This plugin was original developed by the awesome [Michael D. Adams](https://profiles.wordpress.org/mdawaffe/).
 
 == Installation ==
 
@@ -47,6 +41,10 @@ It's now ready to go.
 == Changelog ==
 
 [Learn more about my version numbering methodology](https://artiss.blog/2016/09/wordpress-plugin-versioning/ "WordPress Plugin Versioning")
+
+= 1.1.3 =
+* Enhancement: Improved plugin meta
+* Maintenance: Beefed up code quality even more
 
 = 1.1.2 =
 * Enhancement: Because minimum VIP standards are just not enough, it now follows their hard-as-snails, full-strength standards. Because your code is worth it
@@ -71,5 +69,5 @@ It's now ready to go.
 
 == Upgrade Notice ==
 
-= 1.1.2 =
-* Code quality and accessibility improvements
+= 1.1.3 =
+* Code quality and plugin meta improvements
