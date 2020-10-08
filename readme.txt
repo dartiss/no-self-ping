@@ -5,7 +5,7 @@ Tags: pingback, ping, trackback
 Requires at least: 4.6
 Tested up to: 5.5
 Requires PHP: 5.3
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,9 @@ It's now ready to go.
 
 [Learn more about my version numbering methodology](https://artiss.blog/2016/09/wordpress-plugin-versioning/ "WordPress Plugin Versioning")
 
+= 1.1.5 =
+* Bug: Oh boy. Ever have one of those Thursdays? I restored the settings description in the last release but then managed to break some of the content of that sentence. It's now... fixed. I hope
+
 = 1.1.4 =
 * Bug: Fixed some missing output on the settings screen. Oopsie
 
@@ -74,5 +77,5 @@ It's now ready to go.
 
 == Upgrade Notice ==
 
-= 1.1.4 =
-* Fixed an issue with the settings output
+= 1.1.5 =
+* Fixed a bug in the bug fix
