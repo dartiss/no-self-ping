@@ -3,9 +3,9 @@ Contributors: mdawaffe, dartiss
 Donate link: https://artiss.blog/donate
 Tags: pingback, ping, trackback
 Requires at least: 4.6
-Tested up to: 5.4
+Tested up to: 5.5
 Requires PHP: 5.3
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,6 +20,8 @@ Some people do not like this behavior; it clutters up their comments.
 This plugin disables intra-blog pinging.
 
 Once activated, there's nothing for you to do. However, head to Settings -> Discussion and you'll find a field in which you can, if you wish, specify more domains that won't be pinged. Why? Well, maybe you often refer to other sites that you maintain or, particularly, you run a multi-site and don't want each blog pinging the other - specify a list here and you're sorted.
+
+Iconography is courtesy of the very talented [Janki Rathod](https://www.linkedin.com/in/jankirathore/).
 
 Please visit the [Github page](https://github.com/dartiss/no-self-ping "Github") for the latest code development, planned enhancements and known issues.
 
@@ -41,6 +43,9 @@ It's now ready to go.
 == Changelog ==
 
 [Learn more about my version numbering methodology](https://artiss.blog/2016/09/wordpress-plugin-versioning/ "WordPress Plugin Versioning")
+
+= 1.1.4 =
+* Bug: Fixed some missing output on the settings screen. Oopsie
 
 = 1.1.3 =
 * Enhancement: Improved plugin meta
@@ -69,5 +74,5 @@ It's now ready to go.
 
 == Upgrade Notice ==
 
-= 1.1.3 =
-* Code quality and plugin meta improvements
+= 1.1.4 =
+* Fixed an issue with the settings output

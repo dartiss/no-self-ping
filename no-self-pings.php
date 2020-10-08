@@ -1,9 +1,9 @@
 <?php
 /**
 Plugin Name: No Self Pings
-Plugin URI: https://github.com/dartiss/no-self-ping
+Plugin URI: https://wordpress.org/plugins/no-self-ping/
 Description: 🏓 Keeps WordPress from sending pings to your own site.
-Version: 1.1.3
+Version: 1.1.4
 Author: David Artiss
 Author URI: https://artiss.blog
 Text Domain: no-self-ping
@@ -131,7 +131,7 @@ add_action( 'admin_init', 'no_self_pings_settings_init' );
 function no_self_pings_section_callback() {
 
 	/* translators: %s: URL of website */
-	esc_attr( sprintf( __( 'By default, No Self Pings will exclude pings for this site (%s) but you can supply additional URLs below. Separate multiple URLs with line breaks.', 'no-self-ping' ), esc_url( home_url() ) ) );
+	echo sprintf( esc_attr_e( 'By default, No Self Pings will exclude pings for this site (%s) but you can supply additional URLs below. Separate multiple URLs with line breaks.', 'no-self-ping' ), esc_url( home_url() ) );
 
 }
 
@@ -144,6 +144,6 @@ function no_self_pings_setting_callback() {
 
 	$urls = sanitize_option( 'ping_sites', get_option( 'no_self_pings_option', '' ) );
 
-	echo '<label>Additional URLs<textarea name="no_self_pings_option" rows="3" class="large-text code">' . esc_attr( $urls ) . '</textarea></label>';
+	echo '<textarea name="no_self_pings_option" rows="3" class="large-text code">' . esc_attr( $urls ) . '</textarea>';
 
 }
