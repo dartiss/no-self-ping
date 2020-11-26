@@ -3,7 +3,7 @@ Contributors: mdawaffe, dartiss
 Donate link: https://artiss.blog/donate
 Tags: pingback, ping, trackback
 Requires at least: 4.6
-Tested up to: 5.5
+Tested up to: 5.6
 Requires PHP: 5.3
 Stable tag: 1.1.5
 License: GPLv2 or later
@@ -21,11 +21,9 @@ This plugin disables intra-blog pinging.
 
 Once activated, there's nothing for you to do. However, head to Settings -> Discussion and you'll find a field in which you can, if you wish, specify more domains that won't be pinged. Why? Well, maybe you often refer to other sites that you maintain or, particularly, you run a multi-site and don't want each blog pinging the other - specify a list here and you're sorted.
 
-Iconography is courtesy of the very talented [Janki Rathod](https://www.linkedin.com/in/jankirathore/).
+This plugin was originally developed by the awesome [Michael D. Adams](https://profiles.wordpress.org/mdawaffe/) and the iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore) ♥️
 
-Please visit the [Github page](https://github.com/dartiss/no-self-ping "Github") for the latest code development, planned enhancements and known issues.
-
-This plugin was original developed by the awesome [Michael D. Adams](https://profiles.wordpress.org/mdawaffe/).
+👉 Please visit the [Github page](https://github.com/dartiss/no-self-ping "Github") for the latest code development, planned enhancements and known issues 👈
 
 == Installation ==
 
@@ -42,7 +40,7 @@ It's now ready to go.
 
 == Changelog ==
 
-[Learn more about my version numbering methodology](https://artiss.blog/2016/09/wordpress-plugin-versioning/ "WordPress Plugin Versioning")
+This plugin uses semantic versioning, with the first release being 0.1.
 
 = 1.1.5 =
 * Bug: Oh boy. Ever have one of those Thursdays? I restored the settings description in the last release but then managed to break some of the content of that sentence. It's now... fixed. I hope
