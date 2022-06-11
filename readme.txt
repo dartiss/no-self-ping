@@ -3,7 +3,7 @@ Contributors: mdawaffe, dartiss
 Donate link: https://artiss.blog/donate
 Tags: pingback, ping, trackback
 Requires at least: 4.6
-Tested up to: 5.7
+Tested up to: 6.0
 Requires PHP: 5.3
 Stable tag: 1.1.5
 License: GPLv2 or later
