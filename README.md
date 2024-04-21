@@ -1,6 +1,6 @@
 # No Self Pings
 
-<img src="https://ps.w.org/no-self-ping/assets/icon-128x128.png" align="left">Some people really like that WordPress sends pings from your own site to your own site when you write posts; it gives them a trail of related posts.
+<img src="https://ps.w.org/no-self-ping/assets/icon.svg" width=128px align="left" style="padding: 0 20px 20px 0;">Some people really like that WordPress sends pings from your own site to your own site when you write posts; it gives them a trail of related posts.
 
 Some people do not like this behavior; it clutters up their comments.
 
