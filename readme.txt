@@ -3,9 +3,9 @@ Contributors: mdawaffe, dartiss
 Donate link: https://artiss.blog/donate
 Tags: pingback, ping, trackback
 Requires at least: 4.6
-Tested up to: 6.5
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,12 @@ No Self Ping can be found and installed via the Plugin menu within WordPress adm
 
 It's now ready to go.
 
+== Frequently Asked Questions ==
+
+= Do you support this plugin on forks of WordPress? =
+
+No. It was developed for WordPress and so forks remain unsupported. I have no intention of developing and testing this on any other version.
+
 == Screenshots ==
 
 1. Option to specify additional URLs, as found in Settings -> Discussion.
@@ -41,6 +47,10 @@ It's now ready to go.
 == Changelog ==
 
 This plugin uses semantic versioning, with the first release being 0.1.
+
+= 1.2.1 =
+* Bug: Fixed an inverse logic bug which affected additional URLs from working correctly. Thanks to [Bjorn Solstad](https://profiles.wordpress.org/basicus/) for both reporting and providing a fix for this.
+* Enhancement: A few more tweaks, here and there, to keep the Plugin Checker Gods happy
 
 = 1.2 =
 * Enhancement: Code quality improvements

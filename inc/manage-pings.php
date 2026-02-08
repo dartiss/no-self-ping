@@ -28,7 +28,7 @@ function no_self_ping( &$links ) {
 
 	$extra_urls = sanitize_option( 'ping_sites', get_option( 'no_self_pings_option', '' ) );
 
-	if ( is_array( $extra_urls ) ) {
+	if ( ! empty( $extra_urls ) ) {
 		$url_array = explode( PHP_EOL, $extra_urls );
 	} else {
 		$url_array = array();

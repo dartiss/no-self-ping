@@ -9,7 +9,7 @@
  * Plugin Name:       No Self Ping
  * Plugin URI:        https://wordpress.org/plugins/no-self-ping
  * Description:       Keeps WordPress from sending pings to your own site.
- * Version:           1.2
+ * Version:           1.2.1
  * Requires at least: 4.6
  * Requires PHP:      7.4
  * Author:            David Artiss
@@ -25,6 +25,12 @@
  * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
+
+// Exit if accessed directly.
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 // Define global to hold the plugin base file name.
 
