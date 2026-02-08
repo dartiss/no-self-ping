@@ -90,5 +90,5 @@ This plugin uses semantic versioning, with the first release being 0.1.
 
 == Upgrade Notice ==
 
-= 1.2 =
-* A load of code quality improvements
+= 1.2.1 =
+* Fixed an inverse logic bug
