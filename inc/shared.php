@@ -18,12 +18,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * Add options to plugin meta line
  *
- * @version  1.1
+ * @version  1.2
  * @param    string $links  Current links.
  * @param    string $file   File in use.
  * @return   string         Links, now with settings added.
  */
-function nsp_plugin_meta( $links, $file ) {
+function no_self_ping_plugin_meta( $links, $file ) {
 
 	if ( false !== strpos( $file, 'no-self-ping.php' ) ) {
 
@@ -32,14 +32,14 @@ function nsp_plugin_meta( $links, $file ) {
 			array( '<a href="https://github.com/dartiss/no-self-ping">' . __( 'Github', 'no-self-ping' ) . '</a>' ),
 			array( '<a href="https://wordpress.org/support/plugin/no-self-ping">' . __( 'Support', 'no-self-ping' ) . '</a>' ),
 			array( '<a href="https://artiss.blog/donate">' . __( 'Donate', 'no-self-ping' ) . '</a>' ),
-			array( '<a href="https://wordpress.org/support/plugin/no-self-ping/reviews/?filter=5" title="' . __( 'Rate the plugin on WordPress.org', 'no-self-ping' ) . '" style="color: #ffb900">' . str_repeat( '<span class="dashicons dashicons-star-filled" style="font-size: 16px; width:16px; height: 16px"></span>', 5 ) . '</a>' ),
+			array( '<a href="https://wordpress.org/support/plugin/no-self-ping/reviews/" title="' . __( 'Rate the plugin on WordPress.org', 'no-self-ping' ) . '" style="color: #ffb900">' . str_repeat( '<span class="dashicons dashicons-star-filled" style="font-size: 16px; width:16px; height: 16px"></span>', 5 ) . '</a>' ),
 		);
 	}
 
 	return $links;
 }
 
-add_filter( 'plugin_row_meta', 'nsp_plugin_meta', 10, 2 );
+add_filter( 'plugin_row_meta', 'no_self_ping_plugin_meta', 10, 2 );
 
 /**
  * Modify actions links.
@@ -51,7 +51,7 @@ add_filter( 'plugin_row_meta', 'nsp_plugin_meta', 10, 2 );
  * @param    string $plugin_file  The plugin.
  * @return   string               Actions, now with deactivation removed!
  */
-function nsp_action_links( $actions, $plugin_file ) {
+function no_self_ping_action_links( $actions, $plugin_file ) {
 
 	// Make sure we only perform actions for this specific plugin!
 	if ( strpos( $plugin_file, 'no-self-ping.php' ) !== false ) {
@@ -65,7 +65,7 @@ function nsp_action_links( $actions, $plugin_file ) {
 	return $actions;
 }
 
-add_filter( 'plugin_action_links', 'nsp_action_links', 10, 2 );
+add_filter( 'plugin_action_links', 'no_self_ping_action_links', 10, 2 );
 
 /**
  * WordPress Fork Check
@@ -74,7 +74,7 @@ add_filter( 'plugin_action_links', 'nsp_action_links', 10, 2 );
  *
  * @version 1.0
  */
-function nsp_fork_check() {
+function no_self_ping_fork_check() {
 
 	// Check for a fork.
 
@@ -107,4 +107,4 @@ function nsp_fork_check() {
 	}
 }
 
-add_action( 'admin_init', 'nsp_fork_check' );
+add_action( 'admin_init', 'no_self_ping_fork_check' );
